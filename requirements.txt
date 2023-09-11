@@ -1,0 +1,8 @@
+langchain
+openai
+streamlit
+pymysql
+pandas
+mysql.connector
+chromadb
+tiktoken

@@ -1,0 +1,13 @@
+Locating an Employee:
+In case of emergencies, such as fires or earthquakes, it will be necessary to determine if an employee is still inside the building. You can determine this information with a series of SQL queries. 
+The first step is to write and execute a SQL query against the demo_emp table to determine the employee's badge number. 
+The second step is to write and execute a SQL query against the demo_access_log table to determine the most recent access record for that badge number. 
+If their most recent event type is "BX" then report the employee is not in the building. If the event type is "BE" or "RX" then report they are still in the building and report the site number. If the event type is "RE" then they are still in the building and report both the site and room number. 
+
+
+Typical or Normal vs. Abnormal Activities:
+This analysis will execute SQL statements to determine if the last site entered by the employee is a building that employee normally uses. To perform this analysis, execute the following steps:
+First, write a SQL query the returns just the site value for the last "BE" event type for an employee. 
+Second, write another SQL query that what derives the percentage of total visits this site represents of all "BE" events for that same employee. If the most recent site visited is visited less than 20% of all visits, then report "The employee is exhibiting unusual behavior". Otherwise, report "The employee is exhibiting typical behavior".
+
+
